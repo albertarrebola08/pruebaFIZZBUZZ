@@ -23,13 +23,9 @@ function fizzBuzz($num) {
 
 $i = 1;
 while($i<101){
-  fizzBuzz($i);
-  $i++;
+  echo fizzBuzz($i);
   echo '<br>';
-}
-$res = fizzBuzz($num);
-function imprimir($res){
-  return $res;
+  $i++;
 }
 
 ?>
