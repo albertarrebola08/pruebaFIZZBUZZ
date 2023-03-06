@@ -1,5 +1,8 @@
 
 <?php
+
+//Ejercicio pruebas Winche
+
 function fizzBuzz($num) {
   switch (true) {
     case ($num % 4 == 0 && $num % 5 == 0):
