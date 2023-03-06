@@ -4,23 +4,32 @@
 //Ejercicio pruebas Winche
 
 function fizzBuzz($num) {
-  switch (true) {
-    case ($num % 4 == 0 && $num % 5 == 0):
-      echo "fizzbuzz";
-      break;
-    case ($num % 4 == 0):
-      echo "fizz";
-      break;
-    case ($num % 5 == 0):
-      echo "buzz";
-      break;
-    default:
-      echo $num;
+
+  if($num % 3 == 0 && $num % 5 == 0){
+    return "FizzBuzz";
+  }elseif ($num % 3 == 0){
+    return "Fizz";
   }
+  elseif ($num % 5 == 0){
+    return "Buzz";
+  }
+  else{
+    return $num;
+  }
+
+  
 }
 
-for ($i = 1; $i <= 100; $i++) {
+
+$i = 1;
+while($i<101){
   fizzBuzz($i);
-  echo "<br>";
+  $i++;
+  echo '<br>';
 }
+$res = fizzBuzz($num);
+function imprimir($res){
+  return $res;
+}
+
 ?>
